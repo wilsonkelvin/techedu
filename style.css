@@ -1,0 +1,417 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    color: #172033;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+/* LOGIN */
+
+.page {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.card {
+    width: 100%;
+    max-width: 450px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.card h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+
+    font-weight: bold;
+
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+button {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #1d4ed8;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1e40af;
+}
+
+.secondary-button {
+    background: #64748b;
+}
+
+.secondary-button:hover {
+    background: #475569;
+}
+
+#loginMessage {
+    text-align: center;
+
+    color: #dc2626;
+
+    margin-top: 15px;
+}
+
+
+/* CERTIFICATE */
+
+.certificate-page {
+    flex-direction: column;
+}
+
+.certificate {
+    width: 100%;
+    max-width: 1050px;
+
+    background: white;
+
+    padding: 14px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.certificate-border {
+    border: 10px double #173b75;
+
+    padding: 14px;
+}
+
+.certificate-content {
+    min-height: 650px;
+
+    border: 2px solid #c8a43d;
+
+    padding: 50px;
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.school-name {
+    color: #173b75;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+.school-address {
+    color: #64748b;
+
+    margin-top: 8px;
+
+    margin-bottom: 30px;
+}
+
+.certificate h1 {
+    color: #173b75;
+
+    font-family: Georgia, serif;
+
+    font-size: 52px;
+
+    letter-spacing: 6px;
+}
+
+.certificate h2 {
+    color: #c8a43d;
+
+    font-size: 22px;
+
+    letter-spacing: 7px;
+
+    margin-bottom: 40px;
+}
+
+.presented {
+    color: #64748b;
+
+    font-size: 18px;
+
+    margin-bottom: 15px;
+}
+
+.certificate h3 {
+    font-family: Georgia, serif;
+
+    font-size: 42px;
+
+    margin-bottom: 10px;
+}
+
+.gold-line {
+    width: 500px;
+    max-width: 90%;
+
+    border-bottom: 2px solid #c8a43d;
+
+    margin-bottom: 25px;
+}
+
+.achievement {
+    max-width: 700px;
+
+    line-height: 1.7;
+
+    color: #475569;
+
+    margin-bottom: 25px;
+}
+
+.programme {
+    font-size: 18px;
+
+    margin-bottom: 40px;
+}
+
+.certificate-details {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-around;
+
+    gap: 30px;
+
+    margin-bottom: 50px;
+}
+
+.certificate-details div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.certificate-details span {
+    font-size: 12px;
+
+    color: #64748b;
+
+    text-transform: uppercase;
+}
+
+.certificate-details strong {
+    font-size: 14px;
+}
+
+.signatures {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-around;
+
+    gap: 80px;
+}
+
+.signature-line {
+    width: 180px;
+
+    border-bottom: 1px solid black;
+
+    margin-bottom: 8px;
+}
+
+.actions {
+    display: flex;
+
+    gap: 15px;
+
+    width: 100%;
+
+    max-width: 1050px;
+}
+
+.actions button {
+    width: auto;
+    flex: 1;
+}
+
+.logout {
+    background: #64748b;
+}
+
+
+/* VERIFICATION */
+
+#verifyResult {
+    margin-top: 20px;
+}
+
+.valid {
+    background: #ecfdf5;
+
+    border: 1px solid #10b981;
+
+    color: #047857;
+
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+.invalid {
+    background: #fef2f2;
+
+    border: 1px solid #ef4444;
+
+    color: #991b1b;
+
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .certificate-content {
+        padding: 30px 15px;
+    }
+
+    .school-name {
+        font-size: 17px;
+    }
+
+    .certificate h1 {
+        font-size: 32px;
+    }
+
+    .certificate h2 {
+        font-size: 16px;
+    }
+
+    .certificate h3 {
+        font-size: 28px;
+    }
+
+    .certificate-details {
+        flex-direction: column;
+    }
+
+    .signatures {
+        gap: 30px;
+    }
+
+    .signature-line {
+        width: 120px;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+
+    .actions button {
+        width: 100%;
+    }
+}
+
+
+/* PRINT */
+
+@media print {
+
+    body {
+        background: white;
+    }
+
+    .certificate {
+        box-shadow: none;
+    }
+
+    .actions {
+        display: none;
+    }
+
+    .certificate-content {
+        min-height: 650px;
+    }
+}
